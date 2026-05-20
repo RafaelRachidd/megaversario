@@ -494,3 +494,57 @@ footer { text-align: center; padding: 40px; color: #7c7c8a; }
     text-align: justify;
     line-height: 1.5;
 }
+/* ==========================================================================
+   ESTILIZAÇÃO ARCADE RETRO - SNAKE GAME
+   ========================================================================== */
+#container-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(13, 10, 27, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#snakeCanvas {
+    background-color: #05030a;
+    border: 3px solid #1a153a;
+    border-radius: 8px;
+    display: block;
+}
+
+.controle-game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    margin-bottom: 12px;
+}
+
+.placar-game {
+    font-family: 'Righteous', cursive, sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Botão de Novo Jogo Dinâmico */
+.btn-restart-snake {
+    background: transparent;
+    border: 2px solid;
+    font-family: 'Righteous', cursive, sans-serif;
+    font-size: 0.9rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-restart-snake:hover {
+    transform: scale(1.05);
+}

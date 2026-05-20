@@ -33,11 +33,11 @@
         <div class="cards-container">
             <div class="card anos-70 btn-perfil" data-aniversariante="messi">
                 <div class="card-avatar-container">
-                    <img src="img/perfil-messi.jpg" alt="Messi" class="card-perfil-img" onerror="this.src='https://via.placeholder.com/110?text=70s'">
+                    <img src="messi-perfil.jpg" alt="Messi" class="card-perfil-img" onerror="this.src='https://via.placeholder.com/110?text=70s'">
                 </div>
                 <h3>Anos 70</h3>
                 <p><strong>Nome:</strong> Messi</p>
-                <p><strong>Aniversário:</strong> 24 de Junho</p>
+                <p><strong>Aniversário:</strong> 09 de Junho</p>
                 <p>O auge do Disco e das calças boca de sino!</p>
             </div>
 
@@ -47,27 +47,27 @@
                 </div>
                 <h3>Anos 80</h3>
                 <p><strong>Nome:</strong> Michel</p>
-                <p><strong>Aniversário:</strong> 05 de Junho</p>
+                <p><strong>Aniversário:</strong> 15 de Junho</p>
                 <p>Muito neon, synthwave e jogos de Arcade.</p>
             </div>
 
             <div class="card anos-90 btn-perfil" data-aniversariante="charlinho">
                 <div class="card-avatar-container">
-                    <img src="img/perfil-charlinho.jpg" alt="Charlinho" class="card-perfil-img" onerror="this.src='https://via.placeholder.com/110?text=90s'">
+                    <img src="perfil-charlinho.jpg" alt="Charlinho" class="card-perfil-img" onerror="this.src='https://via.placeholder.com/110?text=90s'">
                 </div>
                 <h3>Anos 90</h3>
                 <p><strong>Nome:</strong> Charlinho</p>
-                <p><strong>Aniversário:</strong> 12 de Junho</p>
+                <p><strong>Aniversário:</strong> 30 de Maio</p>
                 <p>A era do Grunge, fitas VHS e das boybands.</p>
             </div>
 
             <div class="card anos-2000 btn-perfil" data-aniversariante="rachid">
                 <div class="card-avatar-container">
-                    <img src="rachidpp.jpg" alt="Rachid" class="card-perfil-img">
+                    <img src="perfil-rachid.jpg" alt="Rachid" class="card-perfil-img">
                 </div>
                 <h3>Anos 2000</h3>
                 <p><strong>Nome:</strong> Rachid</p>
-                <p><strong>Aniversário:</strong> 18 de Junho</p>
+                <p><strong>Aniversário:</strong> 20 de Junho</p>
                 <p>Anos de internet discada, MP3 players e o apogeu dos emos.</p>
             </div>
 
@@ -77,7 +77,7 @@
                 </div>
                 <h3>Anos 2010</h3>
                 <p><strong>Nome:</strong> Vivi</p>
-                <p><strong>Aniversário:</strong> 15 de Junho</p>
+                <p><strong>Aniversário:</strong> 11 de Junho</p>
                 <p>A explosão das redes sociais e o retorno das boybands.</p>
             </div>
         </div>
@@ -104,34 +104,34 @@
     <section id="rsvp" class="rsvp-section">
         <h2>✨ Confirme sua Presença ✨</h2>
         
-        <form class="rsvp-form" id="formRsvp">
-            <div class="form-group">
-                <label for="nome">Seu Nome:</label>
-                <input type="text" id="nome" required placeholder="Digite seu nome completo">
-            </div>
-            
-            <div class="form-group">
-                <label for="decada">Sua Década Favorita (Look da Festa):</label>
-                <select id="decada" required>
-                    <option value="">Selecione...</option>
-                    <option value="70s">Anos 70</option>
-                    <option value="80s">Anos 80</option>
-                    <option value="90s">Anos 90</option>
-                    <option value="2000s">Anos 2000</option>
-                    <option value="2010s">Anos 2010</option>
-                </select>
-            </div>
+       <form class="rsvp-form" id="formRsvp" action="https://formspree.io/f/mjgzyedp" method="POST">
+    <div class="form-group">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome_convidado" required placeholder="Digite seu nome completo">
+    </div>
+    
+    <div class="form-group">
+        <label for="decada">Sua Década Favorita (Look da Festa):</label>
+        <select id="decada" name="decada_escolhida" required>
+            <option value="">Selecione...</option>
+            <option value="70s">Anos 70</option>
+            <option value="80s">Anos 80</option>
+            <option value="90s">Anos 90</option>
+            <option value="2000s">Anos 2000</option>
+            <option value="2010s">Anos 2010</option>
+        </select>
+    </div>
 
-            <div class="form-group">
-                <label>Você vai?</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="presenca" value="sim" checked> Sim, com certeza!</label>
-                    <label><input type="radio" name="presenca" value="nao"> Infelizmente não poderei.</label>
-                </div>
-            </div>
+    <div class="form-group">
+        <label>Você vai?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="presenca" value="sim" checked> Sim, com certeza!</label>
+            <label><input type="radio" name="presenca" value="nao"> Infelizmente não poderei.</label>
+        </div>
+    </div>
 
-            <button type="submit" class="btn-submit">Enviar Confirmação</button>
-        </form>
+    <button type="submit" class="btn-submit">Enviar Confirmação</button>
+</form>
     </section>
 
     <div id="perfilModal" class="modal">
@@ -141,9 +141,9 @@
                 <div id="modalDataContainer"></div>
                 <hr class="modal-divider">
                 <div class="game-zone">
-                    <h3>🎮 Desafio Temporal</h3>
+                    <h3>🎮 Desafio Temporal: Snake Geminiano</h3>
                     <div id="container-jogo">
-                        <p class="game-placeholder">O joguinho personalizado deste aniversariante será carregado aqui!</p>
+                        <p class="game-placeholder">Carregando jogo...</p>http://googleusercontent.com/image_generation_content/4
                     </div>
                 </div>
             </div>
