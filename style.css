@@ -1,0 +1,496 @@
+/* ==========================================================================
+   1. RESET E CONFIGURAÇÕES DO CORPO
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #05030a;
+    color: #e1e1e6;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   2. ENGENHARIA DO BACKGROUND COMPLETO (GÊMEOS + 5 DÉCADAS)
+   ========================================================================== */
+
+/* Fundo Base: Nebulosa Verde-Esmeralda, Roxo, Azul Escuro e Constelações */
+.fundo-espacial {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: -10;
+    background: 
+        radial-gradient(circle at 15% 25%, rgba(6, 214, 160, 0.15) 0%, transparent 35%),  /* Verde Esmeralda */
+        radial-gradient(circle at 85% 20%, rgba(131, 56, 236, 0.2) 0%, transparent 40%),  /* Roxo Cósmico */
+        radial-gradient(circle at 50% 60%, rgba(58, 134, 255, 0.15) 0%, transparent 45%), /* Azul Escuro */
+        radial-gradient(circle at 80% 80%, rgba(255, 0, 110, 0.12) 0%, transparent 35%),  /* Magenta/Neon */
+        #07050f;
+}
+
+/* Símbolos e Estrelas da Constelação de Gêmeos no Universo de Fundo */
+.fundo-espacial::before {
+    content: "♊       ✨       ⭐       ✨\n\n    ✨       ♊       ✨\n\n⭐       ✨       ♊       ⭐";
+    white-space: pre;
+    position: absolute;
+    width: 100%; 
+    text-align: center;
+    top: 15%; left: 0;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.12);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    letter-spacing: 50px;
+    line-height: 2;
+    pointer-events: none;
+}
+
+/* Lado Superior Esquerdo (Anos 70): Globo de Discoteca e Raios de Luz */
+.elemento-70s {
+    position: fixed;
+    top: 5%; left: 3%;
+    z-index: -5;
+    font-size: 5.5rem;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+    opacity: 0.25;
+    pointer-events: none;
+}
+.elemento-70s::after { content: "🪩"; }
+
+/* Centro Superior (Anos 80): Universo Retro / Arcade Gamer */
+.elemento-80s {
+    position: fixed;
+    top: 4%; left: 47%;
+    z-index: -5;
+    font-size: 5rem;
+    filter: drop-shadow(0 0 25px #ff006e);
+    opacity: 0.2;
+    pointer-events: none;
+}
+.elemento-80s::after { content: "🕹️"; }
+
+/* Lado Superior Direito (Anos 90): Rádio Boombox e Fitas */
+.elemento-90s {
+    position: fixed;
+    top: 6%; right: 4%;
+    z-index: -5;
+    font-size: 5.5rem;
+    filter: drop-shadow(0 0 20px #8338ec);
+    opacity: 0.25;
+    pointer-events: none;
+}
+.elemento-90s::after { content: "📻"; }
+
+/* Lado Inferior Esquerdo (Anos 2000): Tocador MP3 e Mídias de CD */
+.elemento-2000s {
+    position: fixed;
+    bottom: 8%; left: 3%;
+    z-index: -5;
+    font-size: 5.5rem;
+    filter: drop-shadow(0 0 20px #3a86ff);
+    opacity: 0.25;
+    pointer-events: none;
+}
+.elemento-2000s::after { content: "💿"; }
+
+/* Lado Inferior Direito (Anos 2010): Curtidas, Notificações e Smartphones */
+.elemento-2010s {
+    position: fixed;
+    bottom: 8%; right: 4%;
+    z-index: -5;
+    font-size: 5rem;
+    filter: drop-shadow(0 0 20px #06d6a0);
+    opacity: 0.25;
+    pointer-events: none;
+}
+.elemento-2010s::after { content: "📱"; }
+
+
+/* ==========================================================================
+   3. HERO SECTION (TOPO DO SITE)
+   ========================================================================== */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background: linear-gradient(rgba(11, 7, 30, 0.1), #0b071e);
+}
+
+.gemini-icon {
+    font-size: 4rem;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    color: #ff007f;
+    text-shadow: 3px 3px 0px #00ffff, 0px 0px 30px rgba(255, 0, 127, 0.5);
+    margin: 10px 0;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 35px;
+    background: linear-gradient(45deg, #00ffff, #ff007f);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px rgba(255, 0, 127, 0.8);
+}
+
+
+/* ==========================================================================
+   4. SEÇÃO DOS CARDS (PÁGINA PRINCIPAL)
+   ========================================================================== */
+.decadas-section, .info-section, .rsvp-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.decadas-section h2, .info-section h2, .rsvp-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: rgba(22, 19, 36, 0.85);
+    border-radius: 15px;
+    padding: 25px;
+    width: 220px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 6px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Fotos de Perfil nos Cards */
+.card-avatar-container {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.card-perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Identidades Visuais das Décadas */
+.anos-70 { border-top-color: #ffbe0b; } 
+.anos-70:hover { box-shadow: 0 10px 20px rgba(255, 190, 11, 0.3); }
+
+.anos-80 { border-top-color: #ff006e; } 
+.anos-80:hover { box-shadow: 0 10px 20px rgba(255, 0, 110, 0.3); }
+
+.anos-90 { border-top-color: #8338ec; } 
+.anos-90:hover { box-shadow: 0 10px 20px rgba(131, 56, 236, 0.3); }
+
+.anos-2000 { border-top-color: #3a86ff; } 
+.anos-2000:hover { box-shadow: 0 10px 20px rgba(58, 134, 255, 0.3); }
+
+.anos-2010 { border-top-color: #06d6a0; } 
+.anos-2010:hover { box-shadow: 0 10px 20px rgba(6, 214, 160, 0.3); }
+
+
+/* ==========================================================================
+   5. SEÇÕES DE INFORMAÇÃO E RSVP
+   ========================================================================== */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.timeline-item {
+    background-color: rgba(22, 19, 36, 0.75);
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 650px;
+    text-align: left;
+    border-left: 5px solid #00ffff;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rsvp-section {
+    background-color: rgba(22, 19, 36, 0.65);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.rsvp-form {
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    text-align: left;
+}
+
+.form-group { margin-bottom: 25px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+
+.form-group input[type="text"], .form-group select {
+    width: 100%;
+    padding: 14px;
+    background-color: #0b071e;
+    border: 1px solid #3a2f6a;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.radio-group { display: flex; gap: 20px; margin-top: 10px; }
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(45deg, #ff007f, #8338ec);
+    color: white;
+    border: none;
+    font-family: 'Righteous', cursive;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.3);
+}
+
+
+/* ==========================================================================
+   6. MODAL DINÂMICO (POP-UP DO PERFIL)
+   ========================================================================== */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; top: 0;
+    width: 100%; height: 100%; 
+    background-color: rgba(2, 1, 7, 0.92);
+    backdrop-filter: blur(12px);
+    overflow-y: auto;
+}
+
+.modal-content {
+    margin: 5% auto; 
+    padding: 35px;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 16px;
+    position: relative;
+    animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close-modal {
+    color: #fff;
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.perfil-header { text-align: center; margin-bottom: 25px; }
+
+/* Comparativo das Fotos (Antes e Depois) */
+.fotos-comparativo {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.foto-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.foto-linha-tempo {
+    width: 180px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.perfil-info {
+    background-color: rgba(11, 7, 30, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.badge-decada {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.curiosidade-box {
+    background-color: #020107;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #00ffff;
+    margin-top: 15px;
+}
+
+.modal-divider {
+    border: 0; height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 30px 0;
+}
+
+.game-zone h3 { text-align: center; color: #00ffff; margin-bottom: 15px; }
+.game-placeholder { text-align: center; color: #a2a2b5; font-style: italic; }
+
+footer { text-align: center; padding: 40px; color: #7c7c8a; }
+
+
+/* ==========================================================================
+   7. SEGUNDO PLANO DOS MODAIS DE CADA DÉCADA SPECÍFICA
+   ========================================================================== */
+.bg-anos70 {
+    background: linear-gradient(rgba(40, 25, 0, 0.6), rgba(11, 7, 30, 0.96)), 
+                url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600') no-repeat center center/cover;
+    border: 2px solid #ffbe0b;
+}
+.bg-anos70 .badge-decada { background-color: #ffbe0b; color: #000; }
+
+.bg-anos80 {
+    background: linear-gradient(rgba(40, 0, 25, 0.6), rgba(11, 7, 30, 0.96)), 
+                url('https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=600') no-repeat center center/cover;
+    border: 2px solid #ff006e;
+}
+.bg-anos80 .badge-decada { background-color: #ff006e; color: #fff; }
+
+.bg-anos90 {
+    background: linear-gradient(rgba(20, 0, 40, 0.6), rgba(11, 7, 30, 0.96)), 
+                url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=600') no-repeat center center/cover;
+    border: 2px solid #8338ec;
+}
+.bg-anos90 .badge-decada { background-color: #8338ec; color: #fff; }
+
+.bg-anos2000 {
+    background: linear-gradient(rgba(0, 25, 50, 0.6), rgba(11, 7, 30, 0.96)), 
+                url('https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=600') no-repeat center center/cover;
+    border: 2px solid #3a86ff;
+}
+.bg-anos2000 .badge-decada { background-color: #3a86ff; color: #fff; }
+
+.bg-anos2010 {
+    background: linear-gradient(rgba(0, 40, 25, 0.6), rgba(11, 7, 30, 0.96)), 
+                url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=600') no-repeat center center/cover;
+    border: 2px solid #06d6a0;
+}
+.bg-anos2010 .badge-decada { background-color: #06d6a0; color: #000; }
+
+
+/* ==========================================================================
+   8. RESPONSIVIDADE (MOBILE)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.8rem; }
+    .cards-container { flex-direction: column; align-items: center; }
+    .card { width: 100%; max-width: 300px; }
+    .fotos-comparativo { flex-direction: column; align-items: center; }
+    .foto-linha-tempo { width: 160px; height: 210px; }
+    /* Esconde ou centraliza os ícones flutuantes em telas menores para não poluir */
+    .elemento-70s, .elemento-80s, .elemento-90s, .elemento-2000s, .elemento-2010s { display: none; }
+}
+/* ==========================================================================
+   ALINHAMENTO, JUSTIFICAÇÃO E ESPAÇAMENTO DOS TÓPICOS DO ANIVERSARIANTE
+   ========================================================================== */
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;            /* Cria um espaçamento vertical idêntico e perfeito entre cada parágrafo/tópico */
+    text-align: left;     /* Garante que o bloco comece totalmente alinhado à esquerda */
+    padding: 20px;
+}
+
+.perfil-info p {
+    margin: 0;            /* Zera margens antigas para o 'gap' controlar o espaço */
+    text-align: justify;  /* Deixa o texto perfeitamente alinhado tanto na esquerda quanto na direita */
+    line-height: 1.6;     /* Dá uma distância confortável entre as linhas do mesmo texto */
+    color: #e1e1e6;
+}
+
+/* Ajuste opcional para destacar os rótulos (Data:, Idade:, Quem é:) */
+.perfil-info p strong {
+    color: #fff;
+    margin-right: 4px;
+}
+
+/* Ajuste da caixinha de curiosidade para acompanhar o alinhamento */
+.curiosidade-box {
+    margin-top: 8px;
+    text-align: justify;
+    line-height: 1.5;
+}

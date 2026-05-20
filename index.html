@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGAVERSÁRIO | Festa dos Geminianos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="fundo-espacial"></div>
+    <div class="elemento-70s"></div>
+    <div class="elemento-80s"></div>
+    <div class="elemento-90s"></div>
+    <div class="elemento-2000s"></div>
+    <div class="elemento-2010s"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="gemini-icon">♊</div>
+            <h1>MEGAVERSÁRIO</h1>
+            <h2>Uma Festa Atemporal</h2>
+            <p>Uma festa, 5 aniversariantes geminianos e muitas décadas para celebrar!</p>
+            <a href="#rsvp" class="btn-primary">Confirmar Presença</a>
+        </div>
+    </header>
+
+    <section class="decadas-section">
+        <h2>♊ Nossos Viajantes do Tempo ♊</h2>
+        <p style="text-align: center; margin-bottom: 20px; color: #a2a2b5;">Clique no card de um aniversariante para ver sua história!</p>
+        
+        <div class="cards-container">
+            <div class="card anos-70 btn-perfil" data-aniversariante="messi">
+                <div class="card-avatar-container">
+                    <img src="img/perfil-messi.jpg" alt="Messi" class="card-perfil-img" onerror="this.src='https://via.placeholder.com/110?text=70s'">
+                </div>
+                <h3>Anos 70</h3>
+                <p><strong>Nome:</strong> Messi</p>
+                <p><strong>Aniversário:</strong> 24 de Junho</p>
+                <p>O auge do Disco e das calças boca de sino!</p>
+            </div>
+
+            <div class="card anos-80 btn-perfil" data-aniversariante="michel">
+                <div class="card-avatar-container">
+                    <img src="perfil-michel.jpg" alt="Michel" class="card-perfil-img" onerror="this.src='https://via.placeholder.com/110?text=80s'">
+                </div>
+                <h3>Anos 80</h3>
+                <p><strong>Nome:</strong> Michel</p>
+                <p><strong>Aniversário:</strong> 05 de Junho</p>
+                <p>Muito neon, synthwave e jogos de Arcade.</p>
+            </div>
+
+            <div class="card anos-90 btn-perfil" data-aniversariante="charlinho">
+                <div class="card-avatar-container">
+                    <img src="img/perfil-charlinho.jpg" alt="Charlinho" class="card-perfil-img" onerror="this.src='https://via.placeholder.com/110?text=90s'">
+                </div>
+                <h3>Anos 90</h3>
+                <p><strong>Nome:</strong> Charlinho</p>
+                <p><strong>Aniversário:</strong> 12 de Junho</p>
+                <p>A era do Grunge, fitas VHS e das boybands.</p>
+            </div>
+
+            <div class="card anos-2000 btn-perfil" data-aniversariante="rachid">
+                <div class="card-avatar-container">
+                    <img src="rachidpp.jpg" alt="Rachid" class="card-perfil-img">
+                </div>
+                <h3>Anos 2000</h3>
+                <p><strong>Nome:</strong> Rachid</p>
+                <p><strong>Aniversário:</strong> 18 de Junho</p>
+                <p>Anos de internet discada, MP3 players e o apogeu dos emos.</p>
+            </div>
+
+            <div class="card anos-2010 btn-perfil" data-aniversariante="vivi">
+                <div class="card-avatar-container">
+                    <img src="perfil-vivi.jpg" alt="Vivi" class="card-perfil-img" onerror="this.src='https://via.placeholder.com/110?text=10s'">
+                </div>
+                <h3>Anos 2010</h3>
+                <p><strong>Nome:</strong> Vivi</p>
+                <p><strong>Aniversário:</strong> 15 de Junho</p>
+                <p>A explosão das redes sociais e o retorno das boybands.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2>🔮 Informações do Evento</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>📅 Data & Horário</h3>
+                <p>Sábado, 20 de Junho de 2026, às 21:30.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>📍 Endereço</h3>
+                <p>Estrada Municipal José Corrêa de Moraes, S/N, Vale San Fernando, Chácara Júlia.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>🪩 Traje Sugerido</h3>
+                <p>Escolha sua década favorita e venha a caráter! Capriche no visual retrô.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="rsvp-section">
+        <h2>✨ Confirme sua Presença ✨</h2>
+        
+        <form class="rsvp-form" id="formRsvp">
+            <div class="form-group">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" required placeholder="Digite seu nome completo">
+            </div>
+            
+            <div class="form-group">
+                <label for="decada">Sua Década Favorita (Look da Festa):</label>
+                <select id="decada" required>
+                    <option value="">Selecione...</option>
+                    <option value="70s">Anos 70</option>
+                    <option value="80s">Anos 80</option>
+                    <option value="90s">Anos 90</option>
+                    <option value="2000s">Anos 2000</option>
+                    <option value="2010s">Anos 2010</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Você vai?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="presenca" value="sim" checked> Sim, com certeza!</label>
+                    <label><input type="radio" name="presenca" value="nao"> Infelizmente não poderei.</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Confirmação</button>
+        </form>
+    </section>
+
+    <div id="perfilModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div id="modalDataContainer"></div>
+                <hr class="modal-divider">
+                <div class="game-zone">
+                    <h3>🎮 Desafio Temporal</h3>
+                    <div id="container-jogo">
+                        <p class="game-placeholder">O joguinho personalizado deste aniversariante será carregado aqui!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Feito com ⚡ para o melhor Megaversário do século.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
