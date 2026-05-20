@@ -78,60 +78,78 @@
                 <h3>Anos 2010</h3>
                 <p><strong>Nome:</strong> Vivi</p>
                 <p><strong>Aniversário:</strong> 11 de Junho</p>
-                <p>A explosão das redes sociais e o retorno das boybands.</p>
+                <p>A explosion das redes sociais e o retorno das boybands.</p>
             </div>
         </div>
     </section>
 
-    <section class="info-section">
+    <section class="info-section" style="text-align: center;">
         <h2>🔮 Informações do Evento</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <h3>📅 Data & Horário</h3>
                 <p>Sábado, 20 de Junho de 2026, às 21:30.</p>
             </div>
-            <div class="timeline-item">
-                <h3>📍 Endereço</h3>
-                <p>Estrada Municipal José Corrêa de Moraes, S/N, Vale San Fernando, Chácara Júlia.</p>
-            </div>
+            
             <div class="timeline-item">
                 <h3>🪩 Traje Sugerido</h3>
-                <p>Escolha sua década favorita e venha a caráter! Capriche no visual retrô.</p>
+                <p><strong>Esporte Fino ou Look Temático:</strong> Escolha sua década favorita (Anos 70, 80, 90, 2000 ou 2010) e venha a caráter! Capriche no visual retrô. ✨</p>
             </div>
+
+            <div class="timeline-item">
+                <h3>📍 Localização</h3>
+                <p>Estrada Municipal José Corrêa de Moraes, S/N, Vale San Fernando, Chácara Júlia - Itapetininga/SP</p>
+            </div>
+        </div>
+
+        <div class="mapa-container" style="margin-top: 25px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.11733942522!2d-48.016230826276704!3d-23.6001243630144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5cb48ca14360d%3A0x558cc6973e38895e!2sCh%C3%A1cara%20Julia!5e0!3m2!1spt-BR!2sbr!4v1779310784661!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
     <section id="rsvp" class="rsvp-section">
         <h2>✨ Confirme sua Presença ✨</h2>
-        
-       <form class="rsvp-form" id="formRsvp" action="https://formspree.io/f/mjgzyedp" method="POST">
-    <div class="form-group">
-        <label for="nome">Seu Nome:</label>
-        <input type="text" id="nome" name="nome_convidado" required placeholder="Digite seu nome completo">
-    </div>
-    
-    <div class="form-group">
-        <label for="decada">Sua Década Favorita (Look da Festa):</label>
-        <select id="decada" name="decada_escolhida" required>
-            <option value="">Selecione...</option>
-            <option value="70s">Anos 70</option>
-            <option value="80s">Anos 80</option>
-            <option value="90s">Anos 90</option>
-            <option value="2000s">Anos 2000</option>
-            <option value="2010s">Anos 2010</option>
-        </select>
-    </div>
+        <form class="rsvp-form" id="formRsvp" action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+            <div class="form-group">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome_convidado" required placeholder="Digite seu nome completo">
+            </div>
 
-    <div class="form-group">
-        <label>Você vai?</label>
-        <div class="radio-group">
-            <label><input type="radio" name="presenca" value="sim" checked> Sim, com certeza!</label>
-            <label><input type="radio" name="presenca" value="nao"> Infelizmente não poderei.</label>
-        </div>
-    </div>
+            <div class="form-group">
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" name="email_convidado" required placeholder="Digite seu e-mail de contato">
+            </div>
+            
+            <div class="form-group">
+                <label for="decada">Sua Década Favorita (Look da Festa):</label>
+                <select id="decada" name="decada_escolhida" required>
+                    <option value="">Selecione...</option>
+                    <option value="70s">Anos 70</option>
+                    <option value="80s">Anos 80</option>
+                    <option value="90s">Anos 90</option>
+                    <option value="2000s">Anos 2000</option>
+                    <option value="2010s">Anos 2010</option>
+                </select>
+            </div>
 
-    <button type="submit" class="btn-submit">Enviar Confirmação</button>
-</form>
+            <div class="form-group">
+                <label>Você vai?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="presenca" value="sim" checked> Sim, com certeza!</label>
+                    <label><input type="radio" name="presenca" value="nao"> Infelizmente não poderei.</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Confirmação</button>
+        </form>
     </section>
 
     <div id="perfilModal" class="modal">
@@ -142,9 +160,7 @@
                 <hr class="modal-divider">
                 <div class="game-zone">
                     <h3>🎮 Desafio Temporal: Snake Geminiano</h3>
-                    <div id="container-jogo">
-                        <p class="game-placeholder">Carregando jogo...</p>http://googleusercontent.com/image_generation_content/4
-                    </div>
+                    <div id="container-jogo"></div>
                 </div>
             </div>
         </div>

@@ -548,3 +548,25 @@ footer { text-align: center; padding: 40px; color: #7c7c8a; }
 .btn-restart-snake:hover {
     transform: scale(1.05);
 }
+/* Garante que o campo de e-mail fique idêntico ao de nome */
+.rsvp-form input[type="text"],
+.rsvp-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #0c091f; /* Fundo escuro do seu tema */
+    border: 1px solid #3a2f6a; /* Bordinha roxa/neon */
+    border-radius: 8px;
+    color: #fff; /* Texto branco ao digitar */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de brilho quando o usuário clicar para digitar */
+.rsvp-form input[type="text"]:focus,
+.rsvp-form input[type="email"]:focus {
+    border-color: #00ffff; /* Brilho ciano ao focar */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
